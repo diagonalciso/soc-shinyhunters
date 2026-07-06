@@ -256,7 +256,7 @@ HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ShinyHunters Monitor</title>
+<title>Soc-Shinyhunters — ShinyHunters Monitor</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',monospace;font-size:13px}
@@ -307,7 +307,7 @@ tbody td{padding:8px 12px;vertical-align:top}
 </head>
 <body>
 <header>
-  <h1>&#9888; SHINYHUNTERS MONITOR</h1>
+  <h1>&#9888; Soc-Shinyhunters <span style="font-weight:400;opacity:.6;font-size:.6em">ShinyHunters Monitor</span></h1>
   <span class="actor">Threat Actor Tracking — Multi-Source Intelligence Dashboard</span>
 </header>
 <div class="stats-bar">
