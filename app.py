@@ -259,8 +259,8 @@ HTML = r"""<!DOCTYPE html>
 <title>Soc-Shinyhunters — ShinyHunters Monitor</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#0d1117;color:#c9d1d9;font-family:'Segoe UI',monospace;font-size:13px}
-a{color:#388bfd;text-decoration:none}a:hover{text-decoration:underline}
+body{background:#0d1117;color:#e6edf3;font-family:'Segoe UI',monospace;font-size:13px}
+a{color:#58a6ff;text-decoration:none}a:hover{text-decoration:underline}
 header{background:#161b22;border-bottom:1px solid #30363d;padding:12px 20px;display:flex;align-items:center;gap:12px}
 header h1{font-size:16px;color:#d29922;font-weight:700;letter-spacing:1px}
 header .actor{font-size:11px;color:#8b949e}
@@ -272,7 +272,7 @@ header .actor{font-size:11px;color:#8b949e}
 .tabs{background:#161b22;border-bottom:1px solid #21262d;display:flex;padding:0 20px}
 .tab{padding:10px 16px;cursor:pointer;color:#8b949e;border-bottom:2px solid transparent;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 .tab.active{color:#d29922;border-bottom-color:#d29922}
-.tab:hover{color:#c9d1d9}
+.tab:hover{color:#e6edf3}
 .panel{display:none;padding:20px}
 .panel.active{display:block}
 .loading{text-align:center;padding:40px;color:#8b949e}
@@ -284,7 +284,7 @@ tbody tr{border-bottom:1px solid #21262d;transition:background .1s}
 tbody tr:hover{background:#161b22}
 tbody td{padding:8px 12px;vertical-align:top}
 .badge{display:inline-block;background:#1c2128;border:1px solid #d29922;color:#d29922;padding:2px 6px;border-radius:3px;font-size:10px;font-weight:600}
-.badge-blue{border-color:#388bfd;color:#388bfd}
+.badge-blue{border-color:#58a6ff;color:#58a6ff}
 .badge-red{border-color:#f85149;color:#f85149}
 .company{font-weight:600;color:#e6edf3}
 .dim{color:#8b949e;font-size:11px}
@@ -293,7 +293,7 @@ tbody td{padding:8px 12px;vertical-align:top}
 .card h3{font-size:11px;text-transform:uppercase;color:#d29922;letter-spacing:.8px;margin-bottom:8px}
 .kv{display:flex;gap:8px;margin-bottom:5px;font-size:12px}
 .kv .k{color:#8b949e;min-width:120px;flex-shrink:0}
-.kv .v{color:#c9d1d9}
+.kv .v{color:#e6edf3}
 .news-item{border-bottom:1px solid #21262d;padding:10px 0}
 .news-item:last-child{border-bottom:none}
 .news-title{font-weight:600;color:#e6edf3;margin-bottom:3px}
@@ -489,7 +489,7 @@ function renderProfile(){
     ${pr.target_cat?.length?`<div class="kv"><span class="k">Target Categories</span><span class="v">${pr.target_cat.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</span></div>`:''}
     ${pr.cfr_type?.length?`<div class="kv"><span class="k">Incident Type</span><span class="v">${pr.cfr_type.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</span></div>`:''}
   </div>`;
-  if(pr.description)html+=`<div class="card"><h3>Description</h3><p style="line-height:1.6;color:#c9d1d9">${esc(pr.description)}</p></div>`;
+  if(pr.description)html+=`<div class="card"><h3>Description</h3><p style="line-height:1.6;color:#e6edf3">${esc(pr.description)}</p></div>`;
   if(pr.refs?.length){
     html+=`<div class="card"><h3>References</h3>`;
     pr.refs.forEach(r=>{html+=`<div style="margin-bottom:4px"><a href="${esc(r)}" target="_blank">${esc(r)}</a></div>`;});
