@@ -1,5 +1,7 @@
 # soc-shinyhunters
 
+> ShinyHunters threat actor monitor
+
 Monitor the ShinyHunters actor across multiple feeds.
 
 ## Documentation
