@@ -2,6 +2,11 @@
 
 > ShinyHunters threat actor monitor
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="soc-shinyhunters dashboard screenshot" width="100%">
+</p>
+
+
 Monitor the ShinyHunters actor across multiple feeds.
 
 ## Documentation
